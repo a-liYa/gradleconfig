@@ -34,7 +34,7 @@ versions.android_compat = "0.0.2"
 
 
 def support = [:]
-support.app_compat = "com.android.support:appcompat-v7:$versions.support"
+support.appcompat = "com.android.support:appcompat-v7:$versions.support"
 support.recyclerview = "com.android.support:recyclerview-v7:$versions.support"
 support.cardview = "com.android.support:cardview-v7:$versions.support"
 support.design = "com.android.support:design:$versions.support"
