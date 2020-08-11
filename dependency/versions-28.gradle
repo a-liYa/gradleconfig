@@ -67,7 +67,7 @@ deps.arch = arch
 deps.glide = glide
 deps.okhttp = "com.squareup.okhttp3:okhttp:$versions.okhttp"
 deps.gson = "com.google.code.gson:gson:$versions.gson"
-deps.butterkinfe = butterknife
+deps.butterknife = butterknife
 deps.swipebacklayout = "me.imid.swipebacklayout.lib:library:$versions.swipebacklayout"
 deps.aliya = aliya
 
