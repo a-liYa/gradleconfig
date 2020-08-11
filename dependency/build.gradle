@@ -1,63 +1,35 @@
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
-
-group = 'aliya.gradle'
-version = '1.0'
-
-def siteUrl = 'https://github.com/a-liYa/gradleconfig'
-def gitUrl = 'https://github.com/a-liYa/gradleconfig.git'
-
-Properties properties = new Properties()
-properties.load(new File(project.rootDir, "local.properties").newDataInputStream())
-def bintray_user = properties.getProperty("bintray.user")
-def bintray_api_key = properties.getProperty("bintray.key")
-
-bintray {
-    user = bintray_user
-    key = bintray_api_key
-
-    configurations = ['archives'] // When uploading configuration files
-    pkg {
-        repo = 'android'
-        name = 'dependency'
-        desc = 'Gradle dependency version'
-        websiteUrl = siteUrl
-        issueTrackerUrl = 'https://github.com/a-liYa/gradleconfig/issues'
-        vcsUrl = gitUrl
-        licenses = ['Apache-2.0']
-        labels = ['grdale', 'android', 'dependency']
-        publicDownloadNumbers = true
-    }
-}
-
-//    repositories.mavenInstaller {
-//        pom {
-//            project {
-//                packaging 'gradle'
-//                name 'dependency'
-//                url siteUrl
-//                licenses {
-//                    license {
-//                        name 'The Apache Software License, Version 2.0'
-//                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-//                    }
-//                }
-//                developers {
-//                    developer {
-//                        id 'dependency'
-//                        name 'a_liya.gradle'
-//                        email 'a_liya@126.com'
-//                    }
-//                }
-//                scm {
-//                    connection gitUrl
-//                    developerConnection gitUrl
-//                    url siteUrl
-//                }
-//            }
-//        }
+//apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.jfrog.bintray'
+//
+//group = 'aliya.gradle'
+//version = '1.0'
+//
+//def siteUrl = 'https://github.com/a-liYa/gradleconfig'
+//def gitUrl = 'https://github.com/a-liYa/gradleconfig.git'
+//
+//Properties properties = new Properties()
+//properties.load(project.rootProject.file('local.properties').newDataInputStream())
+//
+//bintray {
+//    user = properties.getProperty("bintray.user")
+//    key = properties.getProperty("bintray.key")
+//
+//    configurations = ['archives'] // When uploading configuration files
+//    pkg {
+//        repo = 'maven'
+//        name = 'android-dependency'
+//        desc = 'Android gradle dependency version'
+//        websiteUrl = siteUrl
+//        issueTrackerUrl = 'https://github.com/a-liYa/gradleconfig/issues'
+//        vcsUrl = gitUrl
+//        licenses = ['Apache-2.0']
+//        publish = true
 //    }
-
-artifacts {
-    archives file('build_version.gradle')
-}
+//}
+//
+//
+//artifacts {
+//    archives file('versions.gradle')
+//}
+//
+//apply from: 'publish.gradle'
