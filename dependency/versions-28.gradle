@@ -49,9 +49,9 @@ def glide = [:]
 glide.runtime = "com.github.bumptech.glide:glide:$versions.glide"
 glide.compiler = "com.github.bumptech.glide:compiler:$versions.glide"
 
-def butterkinfe = [:]
-butterkinfe.runtime = "com.jakewharton:butterknife:$versions.butterkinfe"
-butterkinfe.compiler = "com.jakewharton:butterknife-compiler:$versions.butterknife"
+def butterknife = [:]
+butterknife.runtime = "com.jakewharton:butterknife:$versions.butterknife"
+butterknife.compiler = "com.jakewharton:butterknife-compiler:$versions.butterknife"
 
 def aliya = [:]
 aliya.fitwindow = "com.aliya:fitwindow:$versions.fitwindow"
