@@ -16,10 +16,8 @@
 
 
 /**
- * Shared file between builds so that they can all use the same dependencies and
- * maven repositories.
- **/
-ext.deps = [:]
+ * Shared file between builds so that they can all use the same dependencies and maven repositories.
+ */
 def versions = [:]
 versions.activity = '1.1.0'
 versions.android_gradle_plugin = '4.0.0'
@@ -216,6 +214,7 @@ work.firebase = "androidx.work:work-firebase:$versions.work"
 work.runtime_ktx = "androidx.work:work-runtime-ktx:$versions.work"
 deps.work = work
 
+ext.deps = [:]
 ext.deps = deps
 
 def addRepos(RepositoryHandler handler) {
@@ -224,3 +223,9 @@ def addRepos(RepositoryHandler handler) {
     handler.maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 ext.addRepos = this.&addRepos
+
+def addAliyunRepos(RepositoryHandler handler) {
+    handler.maven { url 'https://maven.aliyun.com/repository/google' }
+    handler.maven { url 'https://maven.aliyun.com/repository/jcenter' }
+}
+ext.addAliyunRepos = this.&addAliyunRepos
