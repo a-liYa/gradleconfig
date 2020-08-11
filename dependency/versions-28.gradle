@@ -56,7 +56,7 @@ butterknife.compiler = "com.jakewharton:butterknife-compiler:$versions.butterkni
 def aliya = [:]
 aliya.fitwindow = "com.aliya:fitwindow:$versions.fitwindow"
 aliya.decoradapter = "com.aliya:decoradapter:$versions.decoradapter"
-aliya.android_compat = "com.aliya:decoradapter:$versions.android_compat"
+aliya.android_compat = "com.aliya:android-compat:$versions.android_compat"
 
 
 def deps = [:]
