@@ -31,6 +31,7 @@ versions.swipebacklayout = "1.1.0"
 versions.fitwindow = "2.0.0"
 versions.decoradapter = "0.8.4"
 versions.android_compat = "0.0.2"
+versions.novoda_bintray = "0.9"
 
 
 def support = [:]
@@ -70,6 +71,7 @@ deps.gson = "com.google.code.gson:gson:$versions.gson"
 deps.butterknife = butterknife
 deps.swipebacklayout = "me.imid.swipebacklayout.lib:library:$versions.swipebacklayout"
 deps.aliya = aliya
+deps.novoda_bintray = "com.novoda:bintray-release:$versions.novoda_bintray"
 
 ext.deps = deps
 
